@@ -1,14 +1,22 @@
-# PART E.
-# Develop a hash table, without using any additional libraries or classes,
-# that has an insertion function that takes the following components as input
-# and inserts the components into the hash table.
+# PART D.
+# Identify a self-adjusting data structure, such as a hash table,
+# that can be used with the algorithm identified in part A to store the package data.
+#
+# 1. I use the key as the package ID and the value as the package object itself to easily
+# identify which package is which in the search part of the hash table
 
-
+# TIME COMPLEXITY: O(1)
+# SPACE COMPLEXITY: O(n)
 class HashTable:
     def __init__(self, init_capacity=10):
         self.table = []
         for i in range(init_capacity):
             self.table.append([])
+
+    # PART E.
+    # Develop a hash table, without using any additional libraries or classes,
+    # that has an insertion function that takes the following components as input
+    # and inserts the components into the hash table.
 
     # insert function for package object
     def insert(self, key, item):
